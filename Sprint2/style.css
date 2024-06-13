@@ -77,6 +77,7 @@ nav {
     padding: 10px;
 }
 
+
 .image {
     flex: 1;
     text-align: center;
@@ -95,14 +96,22 @@ nav {
 .about-item, .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    
 }
 
-.about-item img, .contact-item img {
-    max-width: 100px;
+.benefits-items{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #FF6666;
+}
+
+
+.about-item img, .contact-item img, .benefits-items img{
+    max-width: 140px;
     height: auto;
-    border-radius: 10px;
-    margin-right: 20px;
+    border-radius: 5px;
 }
 
 .contact-image {
@@ -125,6 +134,22 @@ nav {
     justify-content: space-around;
     margin-top: 20px;
 }
+
+.benefits-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.estrellas{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
 
 footer {
     color: white;
