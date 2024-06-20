@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('./images/image-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    background-image: "checkpoint\images\image-2.jpg";
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.fondo-banner {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.intro , .details_intro {
+    text-align: center;
+    color: red;
+    background-color: rgba(189, 181, 181, 0.8);
+}
+
+.options {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cities {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.city {
+    text-align: center;
+    width: 30%;
+    margin: 20px 0;
+}
+
+.city img {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: auto;
+
+}
+
+
+
+.pricing {
+    text-align: center;
+    padding: 20px;
+}
+
+.pricing table caption {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+table {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.subscribe {
+    margin: 20px 0;
+}
+
+input[type="email"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .cities {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .city {
+        width: 80%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .header-content, .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
