@@ -59,7 +59,6 @@ nav {
     margin: 20px 0;
 }
 
-
 .image-banner img {
     max-width: 100%;
     height: auto;
@@ -70,17 +69,19 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .text {
     flex: 1;
     padding: 10px;
+    min-width: 300px;
 }
-
 
 .image {
     flex: 1;
     text-align: center;
+    min-width: 300px;
 }
 
 .image img {
@@ -96,20 +97,20 @@ nav {
 .about-item, .contact-item {
     display: flex;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 
-.benefits-items{
+.benefits-items {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 20px;
     padding: 20px;
     border: 2px solid #FF6666;
+    flex-wrap: wrap;
 }
 
-
-.about-item img, .contact-item img, .benefits-items img{
+.about-item img, .contact-item img, .benefits-items img {
     max-width: 140px;
     height: auto;
     border-radius: 5px;
@@ -134,23 +135,22 @@ nav {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.benefits-content{
+.benefits-content {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
-    align-items:normal;
+    align-items: normal;
     padding: 20px;
-
 }
 
-.estrellas{
+.estrellas {
     display: flex;
     justify-content: center;
     padding: 30px;
 }
-
 
 footer {
     color: white;
@@ -180,6 +180,38 @@ footer {
     height: 30px;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.map {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.form {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    color: black;
+    border: 2px solid #FF6666;
+}
+
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #FF8989;
+}
+
+
 table {
     margin-left: auto;
     margin-right: auto;
@@ -187,7 +219,6 @@ table {
     border-collapse: collapse;
     border: 3px solid #FF6666;
     margin: 30px;
-    
 }
 
 th, td {
@@ -197,4 +228,38 @@ th, td {
     vertical-align: top;
     border: 1px solid #000;
     border-spacing: 2%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+        
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .benefits-items, .contact-info, .about-item, .contact-item {
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+    }
 }
